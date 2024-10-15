@@ -1,0 +1,10 @@
+# Archivos y carpetas de Visual Studio que no necesitas controlar
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.obj
+*.exe
+*.log
+*.vsidx

@@ -1,0 +1,19 @@
+﻿@model personapi_dotnet.Models.Entities.Telefono
+
+<h2>Detalles del Teléfono</h2>
+
+<div class="form-group">
+    <label>Número:</label>
+    <p>@Model.Num</p>
+</div>
+<div class="form-group">
+    <label>Operador:</label>
+    <p>@Model.Oper</p>
+</div>
+<div class="form-group">
+    <label>Dueño:</label>
+    <p>@Model.Duenio</p>
+</div>
+
+<a asp-action="Edit" asp-route-num="@Model.Num">Editar</a> |
+<a asp-action="Index">Volver a la lista</a>

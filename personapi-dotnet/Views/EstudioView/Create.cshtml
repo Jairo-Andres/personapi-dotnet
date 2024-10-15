@@ -1,0 +1,23 @@
+﻿@model personapi_dotnet.Models.Entities.Estudio
+
+<h2>Crear Nuevo Estudio</h2>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label for="IdProf">Id Profesión</label>
+        <input type="number" class="form-control" asp-for="IdProf" />
+    </div>
+    <div class="form-group">
+        <label for="CcPer">Cédula Persona</label>
+        <input type="number" class="form-control" asp-for="CcPer" />
+    </div>
+    <div class="form-group">
+        <label for="Fecha">Fecha</label>
+        <input type="date" class="form-control" asp-for="Fecha" />
+    </div>
+    <div class="form-group">
+        <label for="Univer">Universidad</label>
+        <input type="text" class="form-control" asp-for="Univer" />
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>

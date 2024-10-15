@@ -1,0 +1,31 @@
+﻿@model IEnumerable<personapi_dotnet.Models.Entities.Estudio>
+
+<h2>Lista de Estudios</h2>
+<a asp-action="Create">Agregar Nuevo Estudio</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id Profesión</th>
+            <th>Cédula Persona</th>
+            <th>Fecha</th>
+            <th>Universidad</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var estudio in Model)
+        {
+            <tr>
+                <td>@estudio.IdProf</td>
+                <td>@estudio.CcPer</td>
+                <td>@estudio.Fecha</td>
+                <td>@estudio.Univer</td>
+                <td>
+                    <a asp-action="Details" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer">Detalles</a> |
+                    <a asp-action="Edit" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer">Editar</a> |
+                    <a asp-action="Delete" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer">Eliminar</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

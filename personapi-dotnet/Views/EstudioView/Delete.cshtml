@@ -1,0 +1,11 @@
+﻿@model personapi_dotnet.Models.Entities.Estudio
+
+<h2>Eliminar Estudio</h2>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="IdProf" />
+    <input type="hidden" asp-for="CcPer" />
+    <p>¿Estás seguro de que deseas eliminar este estudio?</p>
+    <button type="submit" class="btn btn-danger">Eliminar</button> |
+    <a asp-action="Index">Cancelar</a>
+</form>
