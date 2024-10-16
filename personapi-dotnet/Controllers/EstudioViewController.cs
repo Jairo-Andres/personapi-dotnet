@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// EstudioViewController.cs
+using Microsoft.AspNetCore.Mvc;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Repositories;
 
@@ -15,6 +16,7 @@ namespace personapi_dotnet.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.SuccessMessage = TempData["SuccessMessage"];
             var estudios = _repository.GetAll();
             return View(estudios);
         }
@@ -38,13 +40,24 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult Create(Estudio estudio)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Insert(estudio);
-                _repository.Save();
-                return RedirectToAction("Index");
+                return View(estudio);
             }
-            return View(estudio);
+
+            if (_repository.Exists(estudio.IdProf, estudio.CcPer))
+            {
+                ModelState.AddModelError("IdProf", "El estudio con esta combinación de ID de profesión y cédula de persona ya está registrado. Por favor, elija valores diferentes.");
+                return View(estudio);
+            }
+
+            estudio.CcPerNavigation = null;
+            estudio.IdProfNavigation = null;
+
+            _repository.Insert(estudio);
+            _repository.Save();
+            TempData["SuccessMessage"] = "Estudio creado exitosamente.";
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -61,13 +74,18 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult Edit(Estudio estudio)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Update(estudio);
-                _repository.Save();
-                return RedirectToAction("Index");
+                return View(estudio);
             }
-            return View(estudio);
+
+            estudio.CcPerNavigation = null;
+            estudio.IdProfNavigation = null;
+
+            _repository.Update(estudio);
+            _repository.Save();
+            TempData["SuccessMessage"] = "Estudio actualizado exitosamente.";
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -85,8 +103,14 @@ namespace personapi_dotnet.Controllers
         public IActionResult DeleteConfirmed(int idProf, long ccPer)
         {
             var estudio = _repository.GetById(idProf, ccPer);
+            if (estudio == null)
+            {
+                return NotFound();
+            }
+
             _repository.Delete(estudio);
             _repository.Save();
+            TempData["SuccessMessage"] = "Estudio eliminado exitosamente.";
             return RedirectToAction("Index");
         }
     }

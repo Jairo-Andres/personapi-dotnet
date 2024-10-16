@@ -2,22 +2,24 @@
 
 <h2>Detalles del Estudio</h2>
 
-<div class="form-group">
-    <label>Id Profesión:</label>
-    <p>@Model.IdProf</p>
-</div>
-<div class="form-group">
-    <label>Cédula Persona:</label>
-    <p>@Model.CcPer</p>
-</div>
-<div class="form-group">
-    <label>Fecha:</label>
-    <p>@Model.Fecha</p>
-</div>
-<div class="form-group">
-    <label>Universidad:</label>
-    <p>@Model.Univer</p>
-</div>
+<div>
+    <h4>Estudio</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Id Profesión</dt>
+        <dd class="col-sm-10">@Model.IdProf</dd>
 
-<a asp-action="Edit" asp-route-idProf="@Model.IdProf" asp-route-ccPer="@Model.CcPer">Editar</a> |
-<a asp-action="Index">Volver a la lista</a>
+        <dt class="col-sm-2">Cédula Persona</dt>
+        <dd class="col-sm-10">@Model.CcPer</dd>
+
+        <dt class="col-sm-2">Fecha</dt>
+        <dd class="col-sm-10">@Model.Fecha</dd>
+
+        <dt class="col-sm-2">Universidad</dt>
+        <dd class="col-sm-10">@Model.Univer</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-idProf="@Model.IdProf" asp-route-ccPer="@Model.CcPer" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Volver a la lista</a>
+</div>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// ProfesionViewController.cs
+using Microsoft.AspNetCore.Mvc;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Repositories;
 
@@ -15,6 +16,7 @@ namespace personapi_dotnet.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.SuccessMessage = TempData["SuccessMessage"];
             var profesiones = _repository.GetAll();
             return View(profesiones);
         }
@@ -38,13 +40,21 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult Create(Profesion profesion)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Insert(profesion);
-                _repository.Save();
-                return RedirectToAction("Index");
+                return View(profesion);
             }
-            return View(profesion);
+
+            if (_repository.Exists(profesion.Id))
+            {
+                ModelState.AddModelError("Id", "La profesión con este ID ya está registrada. Por favor, elija un ID diferente.");
+                return View(profesion);
+            }
+
+            _repository.Insert(profesion);
+            _repository.Save();
+            TempData["SuccessMessage"] = "Profesión creada exitosamente.";
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -61,13 +71,15 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult Edit(Profesion profesion)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Update(profesion);
-                _repository.Save();
-                return RedirectToAction("Index");
+                return View(profesion);
             }
-            return View(profesion);
+
+            _repository.Update(profesion);
+            _repository.Save();
+            TempData["SuccessMessage"] = "Profesión actualizada exitosamente.";
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -85,8 +97,14 @@ namespace personapi_dotnet.Controllers
         public IActionResult DeleteConfirmed(int id)
         {
             var profesion = _repository.GetById(id);
+            if (profesion == null)
+            {
+                return NotFound();
+            }
+
             _repository.Delete(profesion);
             _repository.Save();
+            TempData["SuccessMessage"] = "Profesión eliminada exitosamente.";
             return RedirectToAction("Index");
         }
     }

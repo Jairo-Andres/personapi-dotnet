@@ -1,4 +1,14 @@
+@model IEnumerable<personapi_dotnet.Models.Entities.Persona>
+
 <h2 class="my-4">Lista de Personas</h2>
+
+@if (ViewBag.SuccessMessage != null)
+
+{
+    <div class="alert alert-success mt-3">
+        @ViewBag.SuccessMessage
+    </div>
+}
 
 <table class="table table-striped table-hover">
     <thead class="thead-dark">
@@ -13,17 +23,17 @@
     <tbody>
         @foreach (var persona in Model)
         {
-        <tr>
-            <td>@persona.Cc</td>
-            <td>@persona.Nombre</td>
-            <td>@persona.Apellido</td>
-            <td>@persona.Edad</td>
-            <td>
-                <a class="btn btn-info btn-sm me-2" href="/PersonaView/Details/@persona.Cc">Detalles</a>
-                <a class="btn btn-warning btn-sm me-2" href="/PersonaView/Edit/@persona.Cc">Editar</a>
-                <a class="btn btn-danger btn-sm" href="/PersonaView/Delete/@persona.Cc">Eliminar</a>
-            </td>
-        </tr>
+            <tr>
+                <td>@persona.Cc</td>
+                <td>@persona.Nombre</td>
+                <td>@persona.Apellido</td>
+                <td>@persona.Edad</td>
+                <td>
+                    <a class="btn btn-info btn-sm me-2" href="/PersonaView/Details/@persona.Cc">Detalles</a>
+                    <a class="btn btn-warning btn-sm me-2" href="/PersonaView/Edit/@persona.Cc">Editar</a>
+                    <a class="btn btn-danger btn-sm" href="/PersonaView/Delete/@persona.Cc">Eliminar</a>
+                </td>
+            </tr>
         }
     </tbody>
 </table>

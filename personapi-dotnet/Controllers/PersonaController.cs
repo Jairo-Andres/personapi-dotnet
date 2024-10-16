@@ -25,7 +25,7 @@ namespace personapi_dotnet.Controllers
 
         // Método GET para obtener una persona por ID
         [HttpGet("{id}")]
-        public IActionResult GetPersona(int id)
+        public IActionResult GetPersona(long id)
         {
             var persona = _repository.GetById(id);
             if (persona == null)
@@ -39,23 +39,35 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult CreatePersona([FromBody] Persona persona)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Insert(persona);
-                _repository.Save();
-                return CreatedAtAction("GetPersona", new { id = persona.Cc }, persona);
+                return BadRequest(ModelState);
             }
-            return BadRequest();
+
+            if (_repository.Exists(persona.Cc))
+            {
+                return Conflict("La persona con esta cédula ya está registrada.");
+            }
+
+            _repository.Insert(persona);
+            _repository.Save();
+            return CreatedAtAction("GetPersona", new { id = persona.Cc }, persona);
         }
 
         // Método PUT para actualizar una persona existente
         [HttpPut("{id}")]
-        public IActionResult UpdatePersona(int id, [FromBody] Persona persona)
+        public IActionResult UpdatePersona(long id, [FromBody] Persona persona)
         {
             if (id != persona.Cc || !ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
+
+            if (!_repository.Exists(id))
+            {
+                return NotFound();
+            }
+
             _repository.Update(persona);
             _repository.Save();
             return NoContent();
@@ -63,7 +75,7 @@ namespace personapi_dotnet.Controllers
 
         // Método DELETE para eliminar una persona
         [HttpDelete("{id}")]
-        public IActionResult DeletePersona(int id)
+        public IActionResult DeletePersona(long id)
         {
             var persona = _repository.GetById(id);
             if (persona == null)

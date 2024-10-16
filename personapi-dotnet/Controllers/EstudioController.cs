@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// EstudioController.cs
+using Microsoft.AspNetCore.Mvc;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Repositories;
 
@@ -36,13 +37,22 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult CreateEstudio([FromBody] Estudio estudio)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Insert(estudio);
-                _repository.Save();
-                return CreatedAtAction("GetEstudio", new { idProf = estudio.IdProf, ccPer = estudio.CcPer }, estudio);
+                return BadRequest(ModelState);
             }
-            return BadRequest();
+
+            if (_repository.Exists(estudio.IdProf, estudio.CcPer))
+            {
+                return Conflict("El estudio con esta combinación de ID de profesión y cédula de persona ya está registrado. Por favor, elija valores diferentes.");
+            }
+
+            estudio.CcPerNavigation = null;
+            estudio.IdProfNavigation = null;
+
+            _repository.Insert(estudio);
+            _repository.Save();
+            return CreatedAtAction("GetEstudio", new { idProf = estudio.IdProf, ccPer = estudio.CcPer }, estudio);
         }
 
         [HttpPut("{idProf}/{ccPer}")]
@@ -50,8 +60,12 @@ namespace personapi_dotnet.Controllers
         {
             if (idProf != estudio.IdProf || ccPer != estudio.CcPer || !ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
+
+            estudio.CcPerNavigation = null;
+            estudio.IdProfNavigation = null;
+
             _repository.Update(estudio);
             _repository.Save();
             return NoContent();

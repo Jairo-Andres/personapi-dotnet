@@ -1,3 +1,4 @@
+// PersonaRepository.cs
 using personapi_dotnet.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
@@ -19,12 +20,15 @@ namespace personapi_dotnet.Repositories
             return _context.Personas.ToList();
         }
 
-        public Persona GetById(long id)  // Cambia el tipo de int a long
+        public Persona GetById(long id)
         {
-            return _context.Personas.Find(id) ?? new Persona();
+            return _context.Personas.Find(id);
         }
 
-
+        public bool Exists(long id)
+        {
+            return _context.Personas.Any(p => p.Cc == id);
+        }
 
         public void Insert(Persona persona)
         {

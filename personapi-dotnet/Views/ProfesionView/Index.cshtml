@@ -1,9 +1,18 @@
 ﻿@model IEnumerable<personapi_dotnet.Models.Entities.Profesion>
 
 <h2>Lista de Profesiones</h2>
-<a asp-action="Create">Agregar Nueva Profesión</a>
-<table class="table">
-    <thead>
+
+@if (ViewBag.SuccessMessage != null)
+
+{
+    <div class="alert alert-success mt-3">
+        @ViewBag.SuccessMessage
+    </div>
+}
+
+<a asp-action="Create" class="btn btn-primary my-3">Agregar Nueva Profesión</a>
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
         <tr>
             <th>Id</th>
             <th>Nombre</th>
@@ -13,15 +22,16 @@
     </thead>
     <tbody>
         @foreach (var profesion in Model)
+
         {
             <tr>
                 <td>@profesion.Id</td>
                 <td>@profesion.Nom</td>
                 <td>@profesion.Des</td>
                 <td>
-                    <a asp-action="Details" asp-route-id="@profesion.Id">Detalles</a> |
-                    <a asp-action="Edit" asp-route-id="@profesion.Id">Editar</a> |
-                    <a asp-action="Delete" asp-route-id="@profesion.Id">Eliminar</a>
+                    <a asp-action="Details" asp-route-id="@profesion.Id" class="btn btn-info btn-sm">Detalles</a>
+                    <a asp-action="Edit" asp-route-id="@profesion.Id" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Delete" asp-route-id="@profesion.Id" class="btn btn-danger btn-sm">Eliminar</a>
                 </td>
             </tr>
         }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// TelefonoViewController.cs
+using Microsoft.AspNetCore.Mvc;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Repositories;
 
@@ -15,6 +16,7 @@ namespace personapi_dotnet.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.SuccessMessage = TempData["SuccessMessage"];
             var telefonos = _repository.GetAll();
             return View(telefonos);
         }
@@ -38,13 +40,23 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult Create(Telefono telefono)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Insert(telefono);
-                _repository.Save();
-                return RedirectToAction("Index");
+                return View(telefono);
             }
-            return View(telefono);
+
+            if (_repository.Exists(telefono.Num))
+            {
+                ModelState.AddModelError("Num", "El teléfono con este número ya está registrado. Por favor, elija un número diferente.");
+                return View(telefono);
+            }
+
+            telefono.DuenioNavigation = null;
+
+            _repository.Insert(telefono);
+            _repository.Save();
+            TempData["SuccessMessage"] = "Teléfono creado exitosamente.";
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -61,13 +73,17 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult Edit(Telefono telefono)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Update(telefono);
-                _repository.Save();
-                return RedirectToAction("Index");
+                return View(telefono);
             }
-            return View(telefono);
+
+            telefono.DuenioNavigation = null;
+
+            _repository.Update(telefono);
+            _repository.Save();
+            TempData["SuccessMessage"] = "Teléfono actualizado exitosamente.";
+            return RedirectToAction("Index");
         }
 
         [HttpGet]
@@ -85,8 +101,14 @@ namespace personapi_dotnet.Controllers
         public IActionResult DeleteConfirmed(string num)
         {
             var telefono = _repository.GetById(num);
+            if (telefono == null)
+            {
+                return NotFound();
+            }
+
             _repository.Delete(telefono);
             _repository.Save();
+            TempData["SuccessMessage"] = "Teléfono eliminado exitosamente.";
             return RedirectToAction("Index");
         }
     }

@@ -5,6 +5,7 @@
 <h3>¿Estás seguro de que deseas eliminar esta profesión?</h3>
 <div>
     <h4>Profesion</h4>
+    <hr />
     <dl class="row">
         <dt class="col-sm-2">Id</dt>
         <dd class="col-sm-10">@Model.Id</dd>
@@ -16,8 +17,8 @@
         <dd class="col-sm-10">@Model.Des</dd>
     </dl>
 </div>
-<form asp-action="DeleteConfirmed">
+<form asp-action="Delete" method="post">
     <input type="hidden" asp-for="Id" />
-    <button type="submit" class="btn btn-danger">Eliminar</button> |
-    <a asp-action="Index">Cancelar</a>
+    <button type="submit" class="btn btn-danger">Eliminar</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
 </form>

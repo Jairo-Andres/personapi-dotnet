@@ -1,10 +1,13 @@
-﻿using System;
+﻿// Persona.cs
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace personapi_dotnet.Models.Entities;
 
 public partial class Persona
 {
+    [Display(Name = "Cedula de la persona")]
     public long Cc { get; set; }
 
     public string Nombre { get; set; } = null!;

@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿// TelefonoRepository.cs
+using Microsoft.EntityFrameworkCore;
 using personapi_dotnet.Models.Entities;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,11 @@ namespace personapi_dotnet.Repositories
                 .FirstOrDefault(t => t.Num == num);
         }
 
+        public bool Exists(string num)
+        {
+            return _context.Telefonos.Any(t => t.Num == num);
+        }
+
         public void Insert(Telefono telefono)
         {
             _context.Telefonos.Add(telefono);
@@ -35,7 +41,7 @@ namespace personapi_dotnet.Repositories
 
         public void Update(Telefono telefono)
         {
-            _context.Telefonos.Update(telefono);
+            _context.Entry(telefono).State = EntityState.Modified;
         }
 
         public void Delete(Telefono telefono)

@@ -1,5 +1,6 @@
-﻿using personapi_dotnet.Models.Entities;
-using personapi_dotnet.Models;
+﻿// ProfesionRepository.cs
+using personapi_dotnet.Models.Entities;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -24,6 +25,11 @@ namespace personapi_dotnet.Repositories
             return _context.Profesions.Find(id);
         }
 
+        public bool Exists(int id)
+        {
+            return _context.Profesions.Any(p => p.Id == id);
+        }
+
         public void Insert(Profesion profesion)
         {
             _context.Profesions.Add(profesion);
@@ -31,7 +37,7 @@ namespace personapi_dotnet.Repositories
 
         public void Update(Profesion profesion)
         {
-            _context.Profesions.Update(profesion);
+            _context.Entry(profesion).State = EntityState.Modified;
         }
 
         public void Delete(Profesion profesion)

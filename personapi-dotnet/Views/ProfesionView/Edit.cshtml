@@ -2,15 +2,21 @@
 
 <h2>Editar Profesión</h2>
 
-<form asp-action="Edit">
+<form asp-action="Edit" method="post" class="form-horizontal">
     <input type="hidden" asp-for="Id" />
+
     <div class="form-group">
-        <label for="Nom">Nombre</label>
-        <input type="text" class="form-control" asp-for="Nom" />
+        <label asp-for="Nom" class="control-label"></label>
+        <input asp-for="Nom" class="form-control" />
+        <span asp-validation-for="Nom" class="text-danger"></span>
     </div>
     <div class="form-group">
-        <label for="Des">Descripción</label>
-        <textarea class="form-control" asp-for="Des"></textarea>
+        <label asp-for="Des" class="control-label"></label>
+        <textarea asp-for="Des" class="form-control"></textarea>
+        <span asp-validation-for="Des" class="text-danger"></span>
     </div>
-    <button type="submit" class="btn btn-primary">Guardar</button>
+    <div class="form-group mt-3">
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </div>
 </form>

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// ProfesionController.cs
+using Microsoft.AspNetCore.Mvc;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Repositories;
 
@@ -36,13 +37,19 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult CreateProfesion([FromBody] Profesion profesion)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Insert(profesion);
-                _repository.Save();
-                return CreatedAtAction("GetProfesion", new { id = profesion.Id }, profesion);
+                return BadRequest(ModelState);
             }
-            return BadRequest();
+
+            if (_repository.Exists(profesion.Id))
+            {
+                return Conflict("La profesión con este ID ya está registrada. Por favor, elija un ID diferente.");
+            }
+
+            _repository.Insert(profesion);
+            _repository.Save();
+            return CreatedAtAction("GetProfesion", new { id = profesion.Id }, profesion);
         }
 
         [HttpPut("{id}")]
@@ -50,8 +57,9 @@ namespace personapi_dotnet.Controllers
         {
             if (id != profesion.Id || !ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
+
             _repository.Update(profesion);
             _repository.Save();
             return NoContent();

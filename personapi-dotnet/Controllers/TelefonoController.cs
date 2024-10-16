@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿// TelefonoController.cs
+using Microsoft.AspNetCore.Mvc;
 using personapi_dotnet.Models.Entities;
 using personapi_dotnet.Repositories;
 
@@ -36,13 +37,21 @@ namespace personapi_dotnet.Controllers
         [HttpPost]
         public IActionResult CreateTelefono([FromBody] Telefono telefono)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
-                _repository.Insert(telefono);
-                _repository.Save();
-                return CreatedAtAction("GetTelefono", new { num = telefono.Num }, telefono);
+                return BadRequest(ModelState);
             }
-            return BadRequest();
+
+            if (_repository.Exists(telefono.Num))
+            {
+                return Conflict("El teléfono con este número ya está registrado. Por favor, elija un número diferente.");
+            }
+
+            telefono.DuenioNavigation = null;
+
+            _repository.Insert(telefono);
+            _repository.Save();
+            return CreatedAtAction("GetTelefono", new { num = telefono.Num }, telefono);
         }
 
         [HttpPut("{num}")]
@@ -50,8 +59,11 @@ namespace personapi_dotnet.Controllers
         {
             if (num != telefono.Num || !ModelState.IsValid)
             {
-                return BadRequest();
+                return BadRequest(ModelState);
             }
+
+            telefono.DuenioNavigation = null;
+
             _repository.Update(telefono);
             _repository.Save();
             return NoContent();

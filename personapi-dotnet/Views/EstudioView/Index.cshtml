@@ -1,9 +1,18 @@
 ﻿@model IEnumerable<personapi_dotnet.Models.Entities.Estudio>
 
 <h2>Lista de Estudios</h2>
-<a asp-action="Create">Agregar Nuevo Estudio</a>
-<table class="table">
-    <thead>
+
+@if (ViewBag.SuccessMessage != null)
+
+{
+    <div class="alert alert-success mt-3">
+        @ViewBag.SuccessMessage
+    </div>
+}
+
+<a asp-action="Create" class="btn btn-primary my-3">Agregar Nuevo Estudio</a>
+<table class="table table-striped table-hover">
+    <thead class="thead-dark">
         <tr>
             <th>Id Profesión</th>
             <th>Cédula Persona</th>
@@ -14,6 +23,7 @@
     </thead>
     <tbody>
         @foreach (var estudio in Model)
+
         {
             <tr>
                 <td>@estudio.IdProf</td>
@@ -21,9 +31,9 @@
                 <td>@estudio.Fecha</td>
                 <td>@estudio.Univer</td>
                 <td>
-                    <a asp-action="Details" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer">Detalles</a> |
-                    <a asp-action="Edit" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer">Editar</a> |
-                    <a asp-action="Delete" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer">Eliminar</a>
+                    <a asp-action="Details" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer" class="btn btn-info btn-sm">Detalles</a>
+                    <a asp-action="Edit" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer" class="btn btn-warning btn-sm">Editar</a>
+                    <a asp-action="Delete" asp-route-idProf="@estudio.IdProf" asp-route-ccPer="@estudio.CcPer" class="btn btn-danger btn-sm">Eliminar</a>
                 </td>
             </tr>
         }
