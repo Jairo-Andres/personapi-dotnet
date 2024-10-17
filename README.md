@@ -9,7 +9,7 @@ Para configurar el ambiente y desplegar el proyecto, necesitarás:
 - **.NET SDK** versión 8.0
 - **Docker** instalado y en ejecución
 - **SQL Server** como base de datos
-- **Visual Studio** o **Visual Studio Code** para desarrollo
+- **Visual Studio** para desarrollo
 - **Postman** o **Swagger UI** para probar los endpoints de la API
 
 ## Configuración del Ambiente y Despliegue
@@ -27,10 +27,11 @@ Asegúrate de tener SQL Server ejecutándose en tu máquina o en un contenedor D
 ```bash
 {
   "ConnectionStrings": {
-    "DefaultConnection": "Server=localhost;Database=persona_db;User Id=sa;Password=YourStrong!Passw0rd;"
+    "DefaultConnection": "Server=localhost;Database=persona_db;User Id=<USER>;Password=<PASSWORD>;"
   }
 }
 ```
+Estos datos <USER> <PASSWORD> son los configurados en la instalacion de SQL SERVER
 ### 3. Restaurar las Dependencias
 Desde la raíz del proyecto, ejecuta el siguiente comando para restaurar todas las dependencias:
 ```bash
