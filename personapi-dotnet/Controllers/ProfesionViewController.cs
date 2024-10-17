@@ -102,7 +102,7 @@ namespace personapi_dotnet.Controllers
                 return NotFound();
             }
 
-            _repository.Delete(profesion);
+            _repository.DeleteProfesion(profesion);
             _repository.Save();
             TempData["SuccessMessage"] = "Profesión eliminada exitosamente.";
             return RedirectToAction("Index");

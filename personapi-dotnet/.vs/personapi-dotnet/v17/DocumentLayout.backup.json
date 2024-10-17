@@ -7,24 +7,24 @@
       "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\personapi-dotnet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:personapi-dotnet.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\models\\entities\\personadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:models\\entities\\personadbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\repositories\\profesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:repositories\\profesionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\controllers\\profesionviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:controllers\\profesionviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\controllers\\profesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:controllers\\profesioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\models\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:models\\entities\\persona.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\models\\entities\\telefono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:models\\entities\\telefono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\models\\entities\\profesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:models\\entities\\profesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\models\\entities\\estudio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,8 +35,28 @@
       "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:repositories\\estudiorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\controllers\\personaviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:controllers\\personaviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\controllers\\estudioviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:controllers\\estudioviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\controllers\\estudiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:controllers\\estudiocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:controllers\\personacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\models\\entities\\telefono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:models\\entities\\telefono.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|c:\\users\\acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\models\\entities\\profesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7E430197-F679-46FF-93A4-3CAF34A508E0}|personapi-dotnet.csproj|solutionrelative:models\\entities\\profesion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,76 +66,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Persona.cs",
               "RelativeDocumentMoniker": "Models\\Entities\\Persona.cs",
               "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Persona.cs",
               "RelativeToolTip": "Models\\Entities\\Persona.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAqwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T19:52:58.781Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "personapi-dotnet",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\personapi-dotnet.csproj",
-              "RelativeDocumentMoniker": "personapi-dotnet.csproj",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\personapi-dotnet.csproj",
-              "RelativeToolTip": "personapi-dotnet.csproj",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAABJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-10-16T22:12:41.595Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "EstudioRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Repositories\\EstudioRepository.cs",
-              "RelativeDocumentMoniker": "Repositories\\EstudioRepository.cs",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Repositories\\EstudioRepository.cs",
-              "RelativeToolTip": "Repositories\\EstudioRepository.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T21:52:37.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwA4AAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-10-16T21:48:27.645Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "PersonaController.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\PersonaController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PersonaController.cs",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\PersonaController.cs",
-              "RelativeToolTip": "Controllers\\PersonaController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAcwBIAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T21:45:48.189Z",
               "EditorCaption": ""
             },
             {
@@ -126,35 +90,61 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T21:37:20.793Z",
+              "WhenOpened": "2024-10-17T15:13:04.104Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProfesionRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Repositories\\ProfesionRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\ProfesionRepository.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Repositories\\ProfesionRepository.cs",
+              "RelativeToolTip": "Repositories\\ProfesionRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAiwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T14:47:53.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PersonaDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\PersonaDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\PersonaDbContext.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\PersonaDbContext.cs",
+              "RelativeToolTip": "Models\\Entities\\PersonaDbContext.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAADwvy4AAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T14:31:55.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProfesionViewController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\ProfesionViewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfesionViewController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\ProfesionViewController.cs",
+              "RelativeToolTip": "Controllers\\ProfesionViewController.cs",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAkwGkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T14:31:43.981Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Telefono.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Telefono.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Telefono.cs",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Telefono.cs",
-              "RelativeToolTip": "Models\\Entities\\Telefono.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwBQAAAAAAAAAAAAAAA==",
+              "Title": "ProfesionController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\ProfesionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProfesionController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\ProfesionController.cs",
+              "RelativeToolTip": "Controllers\\ProfesionController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAiwEsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:53:45.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Profesion.cs",
-              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Profesion.cs",
-              "RelativeDocumentMoniker": "Models\\Entities\\Profesion.cs",
-              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Profesion.cs",
-              "RelativeToolTip": "Models\\Entities\\Profesion.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-16T19:53:28.266Z",
+              "WhenOpened": "2024-10-17T14:31:35.089Z",
               "EditorCaption": ""
             },
             {
@@ -165,10 +155,104 @@
               "RelativeDocumentMoniker": "Models\\Entities\\Estudio.cs",
               "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Estudio.cs",
               "RelativeToolTip": "Models\\Entities\\Estudio.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAmwBcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-16T19:52:43.44Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EstudioRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Repositories\\EstudioRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\EstudioRepository.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Repositories\\EstudioRepository.cs",
+              "RelativeToolTip": "Repositories\\EstudioRepository.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwCwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T21:52:37.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "EstudioViewController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\EstudioViewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudioViewController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\EstudioViewController.cs",
+              "RelativeToolTip": "Controllers\\EstudioViewController.cs",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAkwHQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T14:30:14.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EstudioController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\EstudioController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EstudioController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\EstudioController.cs",
+              "RelativeToolTip": "Controllers\\EstudioController.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAkwFcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T14:30:02.61Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PersonaViewController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\PersonaViewController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonaViewController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\PersonaViewController.cs",
+              "RelativeToolTip": "Controllers\\PersonaViewController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAIwHIAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T12:32:22.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PersonaController.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\PersonaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PersonaController.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Controllers\\PersonaController.cs",
+              "RelativeToolTip": "Controllers\\PersonaController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwFkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T12:32:15.352Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Telefono.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Telefono.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Telefono.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Telefono.cs",
+              "RelativeToolTip": "Models\\Entities\\Telefono.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBMAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:53:45.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Profesion.cs",
+              "DocumentMoniker": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Profesion.cs",
+              "RelativeDocumentMoniker": "Models\\Entities\\Profesion.cs",
+              "ToolTip": "C:\\Users\\Acer\\source\\repos\\personapi-dotnet\\personapi-dotnet\\Models\\Entities\\Profesion.cs",
+              "RelativeToolTip": "Models\\Entities\\Profesion.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-16T19:53:28.266Z"
             }
           ]
         }

@@ -73,7 +73,7 @@ namespace personapi_dotnet.Controllers
             {
                 return NotFound();
             }
-            _repository.Delete(profesion);
+            _repository.DeleteProfesion(profesion);
             _repository.Save();
             return NoContent();
         }

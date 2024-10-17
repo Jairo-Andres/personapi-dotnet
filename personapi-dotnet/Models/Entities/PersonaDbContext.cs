@@ -58,7 +58,7 @@ public partial class PersonaDbContext : DbContext
 
             entity.HasOne(d => d.IdProfNavigation).WithMany(p => p.Estudios)
                 .HasForeignKey(d => d.IdProf)
-                .OnDelete(DeleteBehavior.ClientSetNull)
+                .OnDelete(DeleteBehavior.Cascade)
                 .HasConstraintName("FK_estudio_profesion");
         });
 

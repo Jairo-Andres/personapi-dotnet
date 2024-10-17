@@ -40,10 +40,21 @@ namespace personapi_dotnet.Repositories
             _context.Entry(profesion).State = EntityState.Modified;
         }
 
-        public void Delete(Profesion profesion)
+        public void DeleteProfesion(Profesion profesion)
         {
+            // Obtener los estudios relacionados con la profesión
+            var estudiosRelacionados = _context.Estudios.Where(e => e.IdProf == profesion.Id).ToList();
+
+            // Eliminar los estudios relacionados
+            _context.Estudios.RemoveRange(estudiosRelacionados);
+
+            // Eliminar la profesión
             _context.Profesions.Remove(profesion);
+
+            // Guardar los cambios
+            _context.SaveChanges();
         }
+
 
         public void Save()
         {

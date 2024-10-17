@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.Text.Json.Serialization;
 
 namespace personapi_dotnet.Models.Entities;
 
@@ -18,7 +19,9 @@ public partial class Estudio
     [Display(Name = "Nombre de la Universidad")]
     public string? Univer { get; set; }
 
+    [JsonIgnore]  // Evita la serialización de esta propiedad
     public virtual Persona? CcPerNavigation { get; set; }
 
+    [JsonIgnore]  // Evita la serialización de esta propiedad
     public virtual Profesion? IdProfNavigation { get; set; }
 }
